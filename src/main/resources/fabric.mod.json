@@ -1,0 +1,44 @@
+{
+  "schemaVersion": 1,
+  "id": "i2w",
+  "version": "${version}",
+
+  "name": "I2W",
+  "description": "Example with fabric of how to setup world generation",
+  "authors": [
+    "m_jimmer"
+  ],
+  "contact": {
+    "homepage": "https://github.com/JosephMillsAtWork",
+    "sources": "https://github.com/JosephMillsAtWork/i2w"
+  },
+
+  "license": "MIT",
+  "icon": "assets/i2w/icon.png",
+  "accessWidener": "i2w.accesswidener",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "com.mjimmer.imagestwoworld.I2W"
+    ],
+    "fabric-datagen": [
+      "com.mjimmer.imagestwoworld._build.I2WDataGenerator"
+    ],
+    "modmenu": [
+      "com.mjimmer.imagestwoworld.config.ModMenuIntegration"
+    ]
+  },
+  "mixins": [
+    "i2w.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.14.9",
+    "fabric-api": "*",
+    "minecraft": "~1.19",
+    "java": ">=17"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}
